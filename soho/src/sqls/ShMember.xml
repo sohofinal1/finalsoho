@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="ShMember">
+<insert id="addmember" parameterType="sh.model.ShMemberDto">
+	INSERT INTO SH_MEMBER(ID, PWD, NAME ,GENDER, RDATE, EMAIL, PNUM, AUTH)
+	VALUES(#{id}, #{pwd}, #{name},#{gender}, #{rdate}, #{email},#{pnum}, 3)	
+</insert>
+
+<select id="login" 
+	parameterType="sh.model.ShMemberDto"
+	resultType="sh.model.ShMemberDto">
+	SELECT ID, NAME ,GENDER, RDATE, EMAIL, PNUM, AUTH
+	FROM SH_MEMBER
+	WHERE ID=#{id} AND PWD=#{pwd}
+</select>
+
+<select id="getId" 
+	parameterType="sh.model.ShMemberDto"
+	resultType="java.lang.Integer">
+
+	SELECT NVL(COUNT(*), 0)
+	FROM SH_MEMBER
+	WHERE ID=#{id}	
+</select>
+
+</mapper>
+

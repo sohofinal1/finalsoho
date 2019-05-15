@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.topnv_1dep {
+    float: left;
+    font-size: 20px;
+    font-family: 'Aparajita';
+    color: #7a7a7a;
+}
+.bg-light {
+    background-color: #b0dbd2!important;
+}
+#backimg{
+	widows: inherit;
+	height: 100%;
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+.navbar-light{
+	color:#bebebe!important;
+}
+.navbar-arand{
+	font-size : 20px;
+	background-color: #c1edfd;
+	color:white!important;
+}
+.navbar-brand{
+	font-size : 15px;
+	color:#bebebe!important;
+}
+.navbar-brand:hover{
+	color:black!important;
+}
+.rbbsimg{
+	width:400px;
+	height:300px; 
+	
+}
+.rbbsimg:hover{
+	filter: brightness(0.8);
+}
+.bbslist_td{
+	color:#a1a1a1!important;
+	padding-bottom: 30px;
+}
+.bbslist_td:hover{
+	color:black!important;
+	aling:center;
+	padding-bottom: 30px;
+}
+.thr{
+	border: solid 5px #bebebe;
+	color: #bebebe!important;
+}
+

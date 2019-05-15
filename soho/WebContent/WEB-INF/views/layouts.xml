@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<!-- main 화면 -->
+<definition name="main.tiles" template="/WEB-INF/views/layouts-tiles.jsp">
+	<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+	<put-attribute name="bbstop" value=""/>
+	<put-attribute name="top_inc" value="/WEB-INF/views/common/top.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/main/main.jsp"/>
+	<put-attribute name="bottom_inc" value="/WEB-INF/views/common/bottom.jsp"/>
+	
+</definition>
+
+<!-- login 화면 -->
+<definition name="login.tiles" extends="main.tiles" >
+<put-attribute name="main" value="/WEB-INF/views/login/login.jsp"/>
+</definition>
+
+<!-- regi 화면 -->
+<definition name="regi.tiles" extends="main.tiles" template="/WEB-INF/views/layouts-tiles.jsp">
+<put-attribute name="main" value="/WEB-INF/views/login/regi.jsp"/>
+</definition>
+
+<!-- rbbs -->
+<definition name="rbbslist.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbslist.jsp"/>
+</definition>
+
+<definition name="rbbsOne.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn1.jsp"/>
+</definition>
+
+<definition name="rbbsTwo.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn2.jsp"/>
+</definition>
+
+<definition name="rbbsThree.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn3.jsp"/>
+</definition>
+
+<definition name="rbbsFour.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn4.jsp"/>
+</definition>
+
+<definition name="rbbsFive.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn5.jsp"/>
+</definition>
+
+<definition name="rbbsSix.tiles"  extends="main.tiles">
+	
+	<put-attribute name="bbstop" value="/WEB-INF/views/rbbs/rbbstop.jsp"/>
+	<put-attribute name="main" value="/WEB-INF/views/rbbs/rbbsn6.jsp"/>
+</definition>
+
+<!-- pds 화면 -->
+<definition name="pdslist.tiles" extends="main.tiles">
+	<put-attribute name="main" value="/WEB-INF/views/pds/pdslist.jsp"/>
+</definition>
+
+
+
+<definition name="pdswrite.tiles" extends="main.tiles">
+	<put-attribute name="main" value="/WEB-INF/views/pds/pdswrite.jsp"/>
+</definition>
+
+
+</tiles-definitions>
+
+
+
+
